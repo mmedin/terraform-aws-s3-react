@@ -2,4 +2,6 @@ Español? [Aquí](README.es.md)
 
 # terraform-aws-s3-react
 
+![Diagram](/img/diagram.png?raw=true 'Diagram')
+
 A beginner's tutorial for deploying a React app on an AWS S3 bucket with the help of Terraform and the AWS CLI.
