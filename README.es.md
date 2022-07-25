@@ -62,40 +62,6 @@ cd sample-react-app
 npm run build
 ```
 
-## Aprovisionando el bucket S3 con Terraform
-
-Para comenzar, parados en la raiz del proyecto inicializamos Terraform:
-
-```console
-terraform init
-```
-
-Luego pedimos a terraform que nos muestre lo que hará:
-
-```console
-terraform plan
-```
-
-Debiera darnos un largo output que termina con un resumen similar a esto:
-
-```console
-Plan: 4 to add, 0 to change, 0 to destroy.
-```
-
-Significa que creará 4 objetos, en este caso el bucket junto con su ACL, policy y configuración para web.
-
-Finalmente aplicamos el plan:
-
-```console
-terraform apply
-```
-
-Como resultado se crearán los objetos mencionados anteriormente, y obtendremos como salida la URL con la que podremos acceder. Por ejemplo:
-
-```console
-website_endpoint = "a-react-app-in-s3.s3-website-us-east-1.amazonaws.com"
-```
-
 ## Desplegando la aplicación
 
 Lo que queda para poder acceder a tal dirección y ver nuestra app react en vivo es copiar el contenido. Lo hacemos con la ayuda del AWS CLI y el siguiente comando:

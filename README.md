@@ -34,37 +34,33 @@ npm run build
 
 ## Provisioning the S3 bucket with Terraform
 
-To begin, at the root of the project we initialize Terraform:
+We will use Terraform to create the S3 bucket with website features and a policy that allows public reading. We will use the code included in [aws-s3-bucket-website.tf](aws-s3-bucket-website.tf). From this file, the only thing we should modify is the bucket name:
+
+```terraform
+variable "bucket_name" {
+  default = "a-react-app-in-s3"
+}
+```
+
+To start, standing at the root of this repo we will prepare terraform with the `init` parameter:
 
 ```console
 terraform init
 ```
 
-Then we ask terraform to show us what it will do:
+After initializing the project we use `plan` to get the details of the changes that Terraform will make, in this case in AWS:
 
 ```console
 terraform plan
 ```
 
-It should give us a long output that ends with a summary similar to this:
-
-```console
-Plan: 4 to add, 0 to change, 0 to destroy.
-```
-
-It means that it will create 4 objects, in this case the bucket along with its ACL, policy and web configuration.
-
-Finally we apply the plan:
+If we agree with the detail, we finally run the `apply` to provision our bucket:
 
 ```console
 terraform apply
 ```
 
-As a result the objects mentioned above will be created, and we will get a URL to access the website. For example:
-
-```console
-website_endpoint = "a-react-app-in-s3.s3-website-us-east-1.amazonaws.com"
-```
+At the end we will obtain the URL with which we will be able to access the bucket from any browser. The format will be `http://[bucket].s3-website-[region].amazonaws.com/`.
 
 ## Deploying the application
 
