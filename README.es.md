@@ -71,7 +71,7 @@ Lo que queda para poder acceder a tal dirección y ver nuestra app react en vivo
 aws s3 sync sample-react-app/build s3://a-react-app-in-s3
 ```
 
-## Lipieza final
+## Limpieza final
 
 Para asegurarnos de dejar la cuenta de AWS limpia y no generar gastos no deseados, con la ayuda de terraform podemos eliminar los objetos que hemos creado. Previamente debemos vaciar el bucket.
 
