@@ -59,6 +59,7 @@ Necesitamos compilar la app para obtener el set de archivos estáticos (html, cs
 
 ```console
 cd sample-react-app
+npm install
 npm run build
 ```
 
@@ -72,8 +73,9 @@ aws s3 sync sample-react-app/build s3://a-react-app-in-s3
 
 ## Lipieza final
 
-Para asegurarnos de dejar la cuenta de AWS limpia y no generar gastos no deseados, con la ayuda de terraform podemos eliminar los objetos que hemos creado previamente:
+Para asegurarnos de dejar la cuenta de AWS limpia y no generar gastos no deseados, con la ayuda de terraform podemos eliminar los objetos que hemos creado. Previamente debemos vaciar el bucket.
 
 ```console
+aws s3 rm --recursive s3://a-react-app-in-s3/
 terraform destroy
 ```
