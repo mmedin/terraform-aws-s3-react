@@ -8,7 +8,7 @@ Una guía para principiantes para desplegar una app React en un bucket S3 de AWS
 
 ## Pre-requisitos
 
-Necesitamos contar con NodeJS. La app ReactJS de ejemplo dentro de este repo fue creada con la v14.19.3. Para verificar la versión que tenemos:
+Necesitamos contar con NodeJS. La app ReactJS de ejemplo dentro de este repo fue creada con la v16.18.1. Para verificar la versión que tenemos:
 
 ```console
 node -v

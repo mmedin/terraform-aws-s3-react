@@ -8,7 +8,7 @@ A beginner's tutorial for deploying a React app on an AWS S3 bucket with the hel
 
 ## Prerequisites
 
-We need to have [NodeJS](https://nodejs.org/es/download/ 'NodeJS Download Page'). The example ReactJS app inside this repo was created with v14.19.3. To check the version we currently have:
+We need to have [NodeJS](https://nodejs.org/es/download/ 'NodeJS Download Page'). The example ReactJS app inside this repo was created with v16.18.1. To check the version we currently have:
 
 ```console
 node -v
