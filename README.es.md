@@ -8,13 +8,13 @@ Una guía para principiantes para desplegar una app React en un bucket S3 de AWS
 
 ## Pre-requisitos
 
-Necesitamos contar con NodeJS. La app ReactJS de ejemplo dentro de este repo fue creada con la v16.18.1. Para verificar la versión que tenemos:
+Necesitamos contar con NodeJS. La app ReactJS de ejemplo dentro de este repo fue creada con la v21.1.0. Para verificar la versión que tenemos:
 
 ```console
 node -v
 ```
 
-También necesitamos contar con la herramienta de línea de comandos AWS [CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) y [Terraform](https://www.terraform.io/downloads). El código Terraform que trabajaremos está probado sobre la v1.0.8. Podría requerir ajustes para funcionar con otras versiones.
+También necesitamos contar con la herramienta de línea de comandos AWS [CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) y [Terraform](https://www.terraform.io/downloads). El código Terraform que trabajaremos está probado sobre la v1.6.3. Podría requerir ajustes para funcionar con otras versiones.
 
 ## Creando el bucket S3 con Terraform
 

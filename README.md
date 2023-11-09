@@ -8,13 +8,13 @@ A beginner's tutorial for deploying a React app on an AWS S3 bucket with the hel
 
 ## Prerequisites
 
-We need to have [NodeJS](https://nodejs.org/es/download/ 'NodeJS Download Page'). The example ReactJS app inside this repo was created with v16.18.1. To check the version we currently have:
+We need to have [NodeJS](https://nodejs.org/es/download/ 'NodeJS Download Page'). The example ReactJS app inside this repo was created with v21.1.0. To check the version we currently have:
 
 ```console
 node -v
 ```
 
-We also need to have the AWS [CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) (command line tool) and [Terraform](https://www.terraform.io/downloads). The Terraform code we will work with is tested on v1.0.8. It may require adjustments to work with other versions.
+We also need to have the AWS [CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) (command line tool) and [Terraform](https://www.terraform.io/downloads). The Terraform code we will work with is tested on v1.6.3. It may require adjustments to work with other versions.
 
 ## Provisioning the S3 bucket with Terraform
 
